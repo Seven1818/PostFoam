@@ -1,0 +1,32 @@
+report:
+  title: "CFD Post-Processing Report"
+  author: ""
+  case_name: ""
+  description: ""
+  expert_mode: true
+
+plots:
+  - type: residuals
+    file: postProcessing/residuals/0/residuals.dat
+    section: Residuals
+
+  - type: yplus
+    file: postProcessing/yPlus/0/yPlus.dat
+    section: "Wall Y+"
+
+  - type: probe
+    file: postProcessing/probes/0/p
+    section: "Probe Pressure"
+    ylabel: "Pressure [Pa]"
+    title: "Probe Pressure vs Time"
+
+  - type: surfaceFieldValue
+    file: postProcessing/sidepodMassFlowR/0/surfaceFieldValue.dat
+    section: "Mass Flow"
+    ylabel: "Mass-flow rate [kg/s]"
+    title: "Mass-flow rate vs Time"
+
+  - type: image
+    file: postProcessing/images/foam_render.png
+    caption: "Pressure & Streamlines"
+    section: "Flow Visualisation"
