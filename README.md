@@ -1,4 +1,4 @@
-# POSTFOAM
+# PostFOAM
 
 Automated post-processing and PDF reporting for OpenFOAM simulations.
 
