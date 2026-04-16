@@ -10,13 +10,13 @@ Drop a YAML config into your case directory, run one command, and get a complete
 
 ## Features
 
-- **Config-driven** — define what to plot in a single YAML file, no Python editing required
-- **Residual convergence plots** — automatic parsing of OpenFOAM `residuals.dat`
-- **Wall y+ analysis** — per-patch bar charts (min / max / average)
-- **Time-series plotting** — probe data, surface field values (pressure, mass flow, etc.)
-- **ParaView renders** — optional pvbatch integration for pressure/streamline visualisations
-- **Expert Mode** — structured summary of solver settings, numerical schemes, turbulence model, relaxation factors, and decomposition — parsed directly from your OpenFOAM dictionaries
-- **Professional PDF output** — dark-themed cover page, section dividers, and clean table layouts via ReportLab
+- **Config-driven** - define what to plot in a single YAML file, no Python editing required
+- **Residual convergence plots** - automatic parsing of OpenFOAM `residuals.dat`
+- **Wall y+ analysis** - per-patch bar charts (min / max / average)
+- **Time-series plotting** - probe data, surface field values (pressure, mass flow, etc.)
+- **ParaView renders** - optional pvbatch integration for pressure/streamline visualisations
+- **Expert Mode** - structured summary of solver settings, numerical schemes, turbulence model, relaxation factors, and decomposition — parsed directly from your OpenFOAM dictionaries
+- **Professional PDF output** - dark-themed cover page, section dividers, and clean table layouts via ReportLab
 
 ![Front page of the report](figures/First_page.png)
 <p align="center"><sub><i>Figure 1: Example of front page of the generated report</i></sub></p>
@@ -116,12 +116,12 @@ plots:
 
 When `expert_mode: true`, the report appends structured summary pages parsed from your OpenFOAM dictionaries:
 
-- `system/controlDict` — solver application, time stepping, write settings, function objects
-- `system/fvSchemes` — ddt, grad, div, laplacian, interpolation, snGrad schemes
-- `system/fvSolution` — solver types and tolerances, SIMPLE/PIMPLE/PISO settings, relaxation factors
-- `system/decomposeParDict` — decomposition method and subdomain count
-- `constant/momentumTransport` — turbulence model (RAS/LES) and model name
-- `constant/physicalProperties` — kinematic viscosity and transport model
+- `system/controlDict` - solver application, time stepping, write settings, function objects
+- `system/fvSchemes` - ddt, grad, div, laplacian, interpolation, snGrad schemes
+- `system/fvSolution` - solver types and tolerances, SIMPLE/PIMPLE/PISO settings, relaxation factors
+- `system/decomposeParDict` - decomposition method and subdomain count
+- `constant/momentumTransport` - turbulence model (RAS/LES) and model name
+- `constant/physicalProperties` - kinematic viscosity and transport model
 
 ![Sample page of Expert Mode](figures/Expert_mode.png)
 <p align="center"><sub><i>Figure 3: Sample page of Expert Mode</i></sub></p>
