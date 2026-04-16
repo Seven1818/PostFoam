@@ -18,6 +18,7 @@ Drop a YAML config into your case directory, run one command, and get a complete
 - **Expert Mode** — structured summary of solver settings, numerical schemes, turbulence model, relaxation factors, and decomposition — parsed directly from your OpenFOAM dictionaries
 - **Professional PDF output** — dark-themed cover page, section dividers, and clean table layouts via ReportLab
 
+![Front page of the report](figures/First_page.png)
 ---
 
 ## Quick Start
@@ -106,6 +107,9 @@ plots:
 | `sidepod_massflow` | Mass flow rate time-series (here for sidepods of a car) | `file`, `section` |
 | `image` | Static image (e.g. ParaView render) | `file`, `section`, `caption` |
 
+
+![Example of Paraview render using the desired .py state](figures/Paraview_render.png)
+
 ### Expert Mode
 
 When `expert_mode: true`, the report appends structured summary pages parsed from your OpenFOAM dictionaries:
@@ -117,6 +121,7 @@ When `expert_mode: true`, the report appends structured summary pages parsed fro
 - `constant/momentumTransport` — turbulence model (RAS/LES) and model name
 - `constant/physicalProperties` — kinematic viscosity and transport model
 
+![Sample page of Expert Mode](figures/Expert_mode.png)
 ---
 
 ## File Structure
