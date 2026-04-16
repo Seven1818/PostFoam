@@ -19,6 +19,7 @@ Drop a YAML config into your case directory, run one command, and get a complete
 - **Professional PDF output** — dark-themed cover page, section dividers, and clean table layouts via ReportLab
 
 ![Front page of the report](figures/First_page.png)
+*Example of front page of the generated report*
 ---
 
 ## Quick Start
@@ -109,6 +110,7 @@ plots:
 
 
 ![Example of Paraview render using the desired .py state](figures/Paraview_render.png)
+*Example of Paraview render using the desired .py state*
 
 ### Expert Mode
 
@@ -122,6 +124,8 @@ When `expert_mode: true`, the report appends structured summary pages parsed fro
 - `constant/physicalProperties` — kinematic viscosity and transport model
 
 ![Sample page of Expert Mode](figures/Expert_mode.png)
+*Sample page of Expert Mode*
+
 ---
 
 ## File Structure
