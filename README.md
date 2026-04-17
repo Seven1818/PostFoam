@@ -20,7 +20,7 @@ Drop a YAML config into your case directory, run one command, and get a complete
 
 ![Front page of the report](figures/First_page.png)
 <p align="center"><sub><i>Figure 1: Example of front page of the generated report</i></sub></p>
----
+
 
 ## Quick Start
 
@@ -60,7 +60,6 @@ python /path/to/POSTFOAM/Runner.py --config config.yaml
 
 The runner will automatically pick up the rendered image if it exists at the path specified in the config.
 
----
 
 ## Configuration
 
@@ -126,7 +125,7 @@ When `expert_mode: true`, the report appends structured summary pages parsed fro
 ![Sample page of Expert Mode](figures/Expert_mode.png)
 <p align="center"><sub><i>Figure 3: Sample page of Expert Mode</i></sub></p>
 
----
+
 
 ## File Structure
 
@@ -147,7 +146,7 @@ POSTFOAM/
 └── LICENSE
 ```
 
----
+
 
 ## Requirements
 
@@ -157,7 +156,7 @@ POSTFOAM/
 - `pyyaml`
 - ParaView with `pvbatch` (optional, for flow visualisation renders)
 
----
+
 
 ## Example Output
 
@@ -169,7 +168,7 @@ The report contains:
 - Sidepod pressure and mass flow rate time-series
 - Expert Mode summary of all simulation parameters
 
----
+
 
 ## Roadmap
 
@@ -180,13 +179,13 @@ Planned features for future releases:
 - **Mesh quality summary page** — parse `checkMesh` output into the Expert Mode section
 - **CLI install** — `pip install postfoam` with a `postfoam run` command
 
----
+
 
 ## License
 
 See [LICENSE](LICENSE).
 
----
+
 
 ## Author
 
