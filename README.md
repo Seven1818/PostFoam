@@ -190,3 +190,6 @@ See [LICENSE](LICENSE).
 ## Author
 
 Developed by M. Toffoli as part of an F1 aerodynamics CFD thesis project.
+
+## Acknowledgements
+AI assistants were used to support the development of this tool. All code has been reviewed and tested by the author.
