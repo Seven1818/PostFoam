@@ -1,8 +1,12 @@
+# ── OpenFOAM Post-Processing Config ──
+# Copy this file into your case directory and adjust paths/labels.
+# Run:  python run.py --config config.yaml
+
 report:
   title: "CFD Post-Processing Report"
-  author: ""
-  case_name: ""
-  description: ""
+  author: "Your Name"
+  case_name: "My OpenFOAM Case"
+  description: "A Description"
   expert_mode: true
 
 plots:
@@ -14,13 +18,13 @@ plots:
     file: postProcessing/yPlus/0/yPlus.dat
     section: "Wall Y+"
 
-  - type: probe
+  - type: sidepod_pressure
     file: postProcessing/probes/0/p
     section: "Probe Pressure"
     ylabel: "Pressure [Pa]"
     title: "Probe Pressure vs Time"
 
-  - type: surfaceFieldValue
+  - type: sidepod_massflow
     file: postProcessing/sidepodMassFlowR/0/surfaceFieldValue.dat
     section: "Mass Flow"
     ylabel: "Mass-flow rate [kg/s]"
@@ -30,3 +34,11 @@ plots:
     file: postProcessing/images/foam_render.png
     caption: "Pressure & Streamlines"
     section: "Flow Visualisation"
+  
+  - type: Cd
+    file: postProcessing/forceCoeffs/0/forceCoeffs.dat
+    section: "Aerodynamic Coefficients"
+
+  - type: Cl
+    file: postProcessing/forceCoeffs/0/forceCoeffs.dat
+    section: "Aerodynamic Coefficients"

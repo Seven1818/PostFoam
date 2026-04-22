@@ -17,14 +17,17 @@ from Yplus_plotter import YPlusPlotter
 from sidepodPressurePlotter import SidePodPressurePlotter
 from sidePodMassflowPlotter import SidePodMassflowPlotter
 from ReportBuilder import ReportBuilder
+from Cd_plotter import Cd_plotter
+from Cl_plotter import Cl_plotter
  
- 
-# ── Map config "type" strings to plotter classes and their config key ──
+# --- Map config "type" strings to plotter classes and their config key --- Add any new functions here
 PLOTTER_REGISTRY = {
     "residuals":    {"cls": ResidualsPlotter,       "key": "residuals"},
     "yplus":        {"cls": YPlusPlotter,           "key": "yPlus"},
     "sidepod_pressure": {"cls": SidePodPressurePlotter, "key": "sidePodPressure"},
     "sidepod_massflow": {"cls": SidePodMassflowPlotter, "key": "sidePodMassflow"},
+    "Cd": {"cls": Cd_plotter, "key": "Cd"},
+    "Cl": {"cls": Cl_plotter, "key": "Cl"},
 }
  
  
