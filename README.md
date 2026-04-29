@@ -177,7 +177,9 @@ Planned features for future releases:
 - **ParaView version config** — specify ParaView version (5.9 / 5.11) in the YAML config, with `Runner_pv.py` and `PostProcesser.py` automatically adapting API calls to match
 - **Generic time-series plotter** — unified plotter type replacing case-specific plotters, with axis labels and titles driven from config
 - **Mesh quality summary page** — parse `checkMesh` output into the Expert Mode section
-- **CLI install** — `pip install postfoam` with a `postfoam run` command
+- **Run-time reportin** — Reporting effective computational runtime to make benchmarking easier
+- **Multi-case report generation** — Add the possibility to create a uniform report for multiple simulations (in just 1pdf) to simplify comparisons between configs or various designs.
+  
 
 
 
