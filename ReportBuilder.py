@@ -98,7 +98,7 @@ class ReportBuilder:
         if self.include_expert_mode and self.case_dir:
             expert_sections = DictParser.extract_summary(self.case_dir)
             if expert_sections:
-                self._draw_section_divider(c, pw, ph, "Expert Mode — Simulation Setup")
+                self._draw_section_divider(c, pw, ph, "Expert Mode: Simulation Setup")
                 c.showPage()
                 self._draw_expert_pages(c, pw, ph, expert_sections)
         c.save()
